@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_ratings",
+  "info": {
+    "singularName": "course-rating",
+    "pluralName": "course-ratings",
+    "displayName": "Course_Rating"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "rating": {
+      "type": "integer"
+    }
+  }
+}
