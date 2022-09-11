@@ -4,7 +4,7 @@
   "info": {
     "singularName": "course",
     "pluralName": "courses",
-    "displayName": "course",
+    "displayName": "Course",
     "description": ""
   },
   "options": {
@@ -21,12 +21,6 @@
     "price": {
       "type": "biginteger"
     },
-    "user": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "plugin::users-permissions.user",
-      "inversedBy": "courses"
-    },
     "author": {
       "type": "relation",
       "relation": "manyToOne",
@@ -40,6 +34,12 @@
     },
     "level": {
       "type": "string"
+    },
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "courses"
     }
   }
 }
